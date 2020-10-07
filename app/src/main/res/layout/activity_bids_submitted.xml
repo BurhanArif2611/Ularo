@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".bidderContent.BidderRegistrationActivity">
+
+    <include layout="@layout/tool_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_barLayout">
+    <EditText
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:drawableLeft="@drawable/ic_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:hint="Search"
+        android:maxLines="1"
+        android:fontFamily="@font/cambria_regular"
+        android:id="@+id/bid_categry_search_btn"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawablePadding="@dimen/_10sdp"
+        android:background="@drawable/rount_search"
+        />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swiperefesh"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/bid_categry_search_btn"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/corners"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerbidssubmitted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</RelativeLayout>

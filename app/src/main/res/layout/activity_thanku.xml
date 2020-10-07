@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".activities.ThankuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ularo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/corners">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_after_registration"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"/>
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id_not_activate"
+                android:fontFamily="@font/cambria_regular"
+                android:textSize="@dimen/_16sdp"
+                android:layout_below="@id/img"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_margin="@dimen/_30sdp"
+                android:text="@string/back_to_login_page"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cambria_bold"
+                android:textSize="@dimen/_16sdp"
+                android:background="@drawable/corners_accent"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

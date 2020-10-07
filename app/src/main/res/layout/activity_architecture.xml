@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_background"
+    android:layout_height="match_parent"
+    tools:context=".userContent.RepairAndMaintainanceActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_barLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="end"
+                android:background="@drawable/ic_view_list"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:text="Architecture form"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_20sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Story Building(Manjil)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_btn_bg_color" />
+
+                <EditText
+                    android:id="@+id/etbuilding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="Story Building(Manjil)"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Area in Square feet(shetrafal)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_btn_bg_color" />
+
+                <EditText
+                    android:id="@+id/etarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="Area in Squar feet(shetrafal)"
+                    android:fontFamily="@font/cambria_regular"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Type of Work"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_btn_bg_color" />
+
+                <Spinner
+                    android:id="@+id/servicetype"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:spinnerMode="dropdown" />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingRight="@dimen/_30sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cambria_bold"
+                android:text="urgent Requirement"
+                android:textAllCaps="true"
+                android:textColor="@color/gray_btn_bg_color" />
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:checkedButton="@id/btnno"
+                android:padding="@dimen/_10sdp">
+
+                <RadioButton
+                    android:id="@+id/btnyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambria_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:textAllCaps="true"
+                    android:text="yes"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RadioButton
+                    android:id="@+id/btnno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambria_regular"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:text="no"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="→ Send"
+        android:fontFamily="@font/cambria_regular"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_40sdp"
+        android:background="@drawable/rount_btn" />
+
+</RelativeLayout>

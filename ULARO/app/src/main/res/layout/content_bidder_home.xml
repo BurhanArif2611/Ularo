@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/splash_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <include layout="@layout/tool_bar"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu"
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/toogle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_17sdp"
+        android:text="ularo"
+        android:textAllCaps="true"
+        android:textColor="@color/white"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@+id/tool_barLayout"
+        android:background="@drawable/corners"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bid_home_rec_v"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pixelmarketo.ularo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove"/>
+    <uses-permission android:name="android.permission.READ_SMS" tools:node="remove"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" tools:node="remove"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon"
+        android:requestLegacyExternalStorage="true">
+        <activity android:name=".userContent.RepairMaintenanceListActivity"></activity>
+        <activity android:name=".activities.AdvertisementActivity" />
+        <activity android:name=".bidderContent.TestActivity" />
+        <activity android:name=".activities.WebViewActivity" />
+        <activity android:name=".activities.FrienchieseActivity" />
+        <activity android:name=".userContent.BidsSubmittedDataActivity" />
+        <activity android:name=".activities.AboutUsActivity" />
+        <activity android:name=".bidderContent.BiddingActivity" />
+        <activity android:name=".bidderContent.BidsStatusActivity" />
+        <activity android:name=".userContent.BidsSubmittedCategoryActivity" />
+        <activity android:name=".userContent.TablayoutActivity" />
+        <activity android:name=".activities.ChangePasswordActivity" />
+        <activity android:name=".activities.ThankuActivity" />
+        <activity android:name=".userContent.UserProfileActivity" />
+        <activity android:name=".userContent.ElectricianActivity" />
+        <activity android:name=".userContent.RailingFilterActivity" />
+        <activity android:name=".userContent.PVCWorkActivity" />
+        <activity android:name=".userContent.PlumberActivity" />
+        <activity android:name=".userContent.PainterActivity" />
+        <activity android:name=".userContent.GlassWorkActivity" />
+        <activity android:name=".userContent.ContractorActivity" />
+        <activity android:name=".userContent.CarpenterActivity" />
+        <activity android:name=".userContent.ArchitectureActivity" />
+        <activity android:name=".userContent.UserRegistrationActivity" />
+        <activity android:name=".userContent.UserHomeActivity" />
+        <activity android:name=".userContent.RepairAndMaintainanceActivity" />
+        <activity android:name=".userContent.SctionFitterActivity" />
+        <activity android:name=".bidderContent.BidderOnCategortySelecActivity" />
+        <activity android:name=".bidderContent.BidderForgotPasActivity" />
+        <activity android:name=".bidderContent.BiddderBidActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".bidderContent.BidderOrderHistoryActivity" />
+        <activity android:name=".bidderContent.TermsAndConditionActivity" />
+        <activity android:name=".bidderContent.BidderHelpActivity" />
+        <activity android:name=".bidderContent.BidderRegistrationActivity" />
+        <activity android:name=".bidderContent.BidderProfileActivity" />
+        <activity android:name=".activities.OtpActivity" />
+        <activity
+            android:name=".bidderContent.BidderHomeActivity"
+            android:label="@string/title_activity_bidder_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".bidderContent.BidderLoginActivity" />
+        <activity android:name=".activities.SelectionActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_gZjNyDkxyYgqIq" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

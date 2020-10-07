@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1047267305596",
+    "firebase_url": "https://ularo-e6a95.firebaseio.com",
+    "project_id": "ularo-e6a95",
+    "storage_bucket": "ularo-e6a95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047267305596:android:0c93c6d77ae4413b3ec1f9",
+        "android_client_info": {
+          "package_name": "com.pixelmarketo.ularo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047267305596-dju91v9onq5rs8jq9t6ik07i5bv5tbsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pixelmarketo.ularo",
+            "certificate_hash": "06d4c0e8cae8556d582af789dc9096276e718195"
+          }
+        },
+        {
+          "client_id": "1047267305596-4lvdp3pgd96enf7b5b33i6ph7go4l82j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgaS7TrszwlOMpQxhpaRoXOGbfQtqJAT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047267305596-4lvdp3pgd96enf7b5b33i6ph7go4l82j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

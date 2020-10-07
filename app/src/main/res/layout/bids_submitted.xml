@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/selc_card"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/display_image"
+                    android:background="@drawable/ic_user" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="2.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:fontFamily="@font/cambria_bold"
+                    android:id="@+id/tvusername"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvdatetime"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="28/05/2019 - 01:20PM" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/arrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                >
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.01"
+                    style="?android:attr/ratingBarStyleSmall"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:id="@+id/imgarrow"
+                    android:src="@drawable/ic_down_arrow_1"
+                    android:layout_below="@id/ratingBar"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/Gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="Category"
+                android:fontFamily="@font/cambria_regular"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/cambria_regular"
+                android:text="02-02-2020" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/hide_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/relativestart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Starting date"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tvstartingdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="02-02-2020" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="completion date"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tvcompletiondate"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="10-02-2020" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativetotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Total days"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/totaldays"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="8 Days" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvbid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="bid amount(in rs.)"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/bidamount"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="2500" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="negotiable upto"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/negotiableamount"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="100" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" * All rates Quoted are Exclusive of material price .Since we provide only services.  "
+                android:gravity="left"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/cambria_regular"
+                android:textColor="@color/colorPrimaryDark"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                />
+            <Button
+                android:id="@+id/btnapprove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="approved now"
+                android:textAllCaps="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/rount_btn"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

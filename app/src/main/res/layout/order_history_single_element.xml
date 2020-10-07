@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+
+    <LinearLayout
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/display_image"
+                    android:background="@drawable/ic_user" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+
+                android:layout_weight="3.5">
+
+                <TextView
+                    android:id="@+id/tvusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textSize="@dimen/_16sdp"
+                    android:fontFamily="@font/cambria_bold"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1325364758"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+                    android:autoLink="phone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvdatetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28/05/2019 - 01:20PM"
+                   android:fontFamily="@font/cambria_regular"
+                    />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativearrow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_10sdp">
+
+
+                <ImageView
+                    android:id="@+id/imgarrow"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+
+                    android:src="@drawable/ic_down_arrow_1"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/Light_Gray"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativecategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="Category"
+                android:fontFamily="@font/cambria_regular"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvcategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/cambria_regular"
+                android:text="02-02-2020" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/hide"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/relativestory"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Story Building (Manjil)"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:id="@+id/story_manjil"
+                    android:textColor="@color/black"
+                    android:text="05" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativesquarefeet"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Area in square feet (shetrafal)"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/area_sqFeet"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+                    android:text="05" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativetype"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Type Of Work"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/work_type"
+                    android:fontFamily="@font/cambria_regular"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:text="Home" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativepaintype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Paint Type"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/paint_type"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Layer"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/layer"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativedimension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Dimension"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/dimension"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/repairrelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Image"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/imgrepair"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_search"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativekitchen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="No. of kitchne"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/kitchen"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativehall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="No. of hall"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/hall"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativebathrooom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="no. of bathroom"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/bathroom"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativebasin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="no. of basin"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/basin"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativelatrin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="no. of latrin"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/latrin"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativetypeofglass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Type Of Glass"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/glass_type"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeservicetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Service Type"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/service_type"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativedescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Description"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/description"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativepurpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Purpose"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/purpose"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeangletype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="angel type"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/angletype"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativepoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="no. of point"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/point"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="no. of room"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/room"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativetotalpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="total point"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/total_point"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative6A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="6a(total point)"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/point6a"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative16A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="16a(total point)"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/point16a"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativemcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="no. of mcbs"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/mcb"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativesubcat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="sub category"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/category"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativesubtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Type"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/type"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="Normal" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativedesign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Design"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"/>
+
+
+                <ImageView
+                    android:id="@+id/imgdesign"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_photo_capture"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/maprelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Map (Naksha)"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/imgmap"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_photo_capture"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativerailling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="image"
+                    android:textAllCaps="true" />
+
+                <ImageView
+                    android:id="@+id/imgrailing"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/Gray"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/hide_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone"
+                android:id="@+id/relativestarting">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Starting date"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tvstartingdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cambria_regular"
+                    android:text="02-02-2020" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone"
+                android:id="@+id/relativecomplete">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="completion date"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tvcompletiondate"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="10-02-2020" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:visibility="gone"
+                android:id="@+id/relativedays">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="Total days"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/totaldays"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+                    android:text="8 Days" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/relativebidamount">
+
+                <TextView
+                    android:id="@+id/tvbid"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="bid amount(in rs.)"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/bidamount"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="2500" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/relativenego">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="negotiable upto"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textAllCaps="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/negotiableamount"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/black"
+
+                    android:text="100" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnfeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/rount_btn"
+                android:text="Review"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/cambria_bold"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ULARO</string>
+    <string name="title_activity_bidder_home">BidderHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="user_register_form">User Registration Form</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="sign_up">sign up</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="verify">VERIFY MOBILE NUMBER</string>
+    <string name="enter_otp">Please enter otp to verify your mobile number</string>
+    <string name="back_to_login_page">Close</string>
+    <string name="id_not_activate">Your ID Is Not Activated.Please Wait For Response From Admin</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="accept"> <u>Terms And Condition</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_of_point_per_room">No. of point(per room)</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="facebook_app_id">1519106771597908</string>
+    <string name="filters">Apply filters on</string>
+    <string name="apply">Apply</string>
+    <string name="area_of_square_feet">Area of Square Feet</string>
+    <string name="story">Story Building</string>
+    <string name="type">Type</string>
+    <string name="highest_to_lowest">Highest to Lowest</string>
+    <string name="lowest_to_highest">Lowest to Highest</string>
+
+</resources>

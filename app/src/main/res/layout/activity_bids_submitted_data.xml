@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:focusableInTouchMode="true"
+    tools:context=".bidderContent.BidderRegistrationActivity">
+
+    <include layout="@layout/tool_bar"
+       />
+    <ImageView
+        android:id="@+id/imgfilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_filter"
+        android:tint="@color/white"
+        android:layout_below="@+id/tool_barLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10sdp"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgfilter">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swiperefesh"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/bid_categry_search_btn"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/corners"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvmsg"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:fontFamily="@font/cambria_bold"
+                    android:textColor="@color/black"
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="left"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerbidssubmitted"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <include layout="@layout/no_data_found"/>
+    </RelativeLayout>
+</RelativeLayout>

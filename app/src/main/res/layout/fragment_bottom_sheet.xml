@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_20sdp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        tools:context=".UserApp.fragment.BottomSheetFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/cambria_bold"
+            android:text="@string/filters"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/tvtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/cambria_regular"
+            android:text="@string/type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:id="@+id/lineartype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rount_btn_white"
+                android:drawableRight="@drawable/uncheck"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/area_of_square_feet"
+                />
+
+            <TextView
+                android:id="@+id/story"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rount_btn_white"
+                android:drawableRight="@drawable/uncheck"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/story"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rount_btn_white"
+                android:drawableRight="@drawable/uncheck"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Total Number of Points"
+                />
+
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rount_btn_white"
+                android:drawableRight="@drawable/uncheck"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Total Job Work"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvfilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/cambria_regular"
+            android:text="Filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:id="@+id/linearfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/hightolow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rount_btn_white"
+                android:drawableRight="@drawable/uncheck"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/highest_to_lowest"
+                />
+
+            <TextView
+                android:id="@+id/lowtohigh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rount_btn_white"
+                android:drawableRight="@drawable/uncheck"
+                android:fontFamily="@font/cambria_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/lowest_to_highest"
+                />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:spinnerMode="dialog"
+            android:visibility="gone"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:spinnerMode="dialog"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/cambria_regular"
+            android:text="Filter by City"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="@dimen/_16sdp" />
+
+        <EditText
+            android:id="@+id/etcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Enter city"
+            android:visibility="gone"
+            android:inputType="textCapWords" />
+
+        <Button
+            android:id="@+id/btnapply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rount_btn"
+            android:fontFamily="@font/cambria_bold"
+            android:text="@string/apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

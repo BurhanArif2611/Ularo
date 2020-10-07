@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pixelmarketo.ularo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".bidderContent.BidderOnCategortySelecActivity"></activity>
+        <activity android:name=".bidderContent.BidderForgotPasActivity" />
+        <activity android:name=".bidderContent.BiddderBidActivity" />
+        <activity android:name=".activities.OTPVerificationActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" />
+        <activity android:name=".bidderContent.BidderOrderHistoryActivity" />
+        <activity android:name=".bidderContent.TermsAndConditionActivity" />
+        <activity android:name=".bidderContent.BidderHelpActivity" />
+        <activity android:name=".bidderContent.BidderRegistrationActivity" />
+        <activity android:name=".bidderContent.BidderProfileActivity" />
+        <activity
+            android:name=".bidderContent.BidderHomeActivity"
+            android:label="@string/title_activity_bidder_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".bidderContent.BidderLoginActivity" />
+        <activity android:name=".activities.SelectionActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_background"
+    android:layout_height="match_parent"
+    tools:context=".userContent.RepairAndMaintainanceActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_barLayout"
+        android:background="@drawable/corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:background="@drawable/ic_view_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Advertisement form"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/cambria_regular"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_20sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_full_name"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:hint="Name"
+                        android:fontFamily="@font/cambria_regular"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_15sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/Light_Gray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_mobile_no"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:hint="Mobile"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:fontFamily="@font/cambria_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_15sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/Light_Gray" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialAutoCompleteTextView
+                        android:id="@+id/etstate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_state"
+                        android:drawablePadding="@dimen/_12sdp"
+                        android:hint="State"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/_5sdp"
+                        android:fontFamily="@font/cambria_regular"
+                        android:textSize="@dimen/_15sdp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/Light_Gray" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialAutoCompleteTextView
+                        android:id="@+id/etdistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_city"
+                        android:drawablePadding="@dimen/_12sdp"
+                        android:hint="District"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/_5sdp"
+                        android:fontFamily="@font/cambria_regular"
+                        android:textSize="@dimen/_15sdp"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/Light_Gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advertisement image"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/cambria_regular"
+                    android:textColor="@color/gray_btn_bg_color" />
+
+                <TextView
+                    android:id="@+id/imgpath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No photograph Upload"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawableRight="@drawable/ic_upload"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:fontFamily="@font/cambria_regular"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@color/Gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Maximum image size should be 300 * 150 for better display to user"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorAccent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:layout_gravity="left"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cambria_bold"
+                    android:text="package"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_btn_bg_color" />
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:checkedButton="@id/btnyes"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:id="@+id/btnyes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cambria_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:textAllCaps="true"
+                        android:text="half yearly"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioButton
+                        android:id="@+id/btnno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cambria_regular"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="yearly"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="→ Submit"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_40sdp"
+        android:fontFamily="@font/cambria_bold"
+        android:background="@drawable/rount_btn" />
+
+</RelativeLayout>
